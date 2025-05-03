@@ -38,7 +38,7 @@ file with program dependencies, `main.py` (entry point of the program), and the 
 - `config`: 
     - `config.py`: file to store configuration data such as:
       - URL to access job dashboard
-      - File path to `geckodriver` web browser engine for Firefox WebDriver and output file(s)
+      - File paths to output files and `geckodriver` web browser engine for Firefox WebDriver
       - Rev username and password (stored and accessed from local `.env` file)
       - XPATHs for page elements used by Selenium
 - `src`:
@@ -62,7 +62,7 @@ file with program dependencies, `main.py` (entry point of the program), and the 
     - `historical`: directory to store historical reports 
       - `all_jobs.png`: scatter plot showing jobs available for each run of the program (by day of the week)
       - `{Year}/{Month}/{Date}/maximum_jobs_daily.png`: line plot showing maximum jobs available each day of the week for the previous week
-      - `{Year}/{Month}/{Date}/prev_week_job_data.txt`: program-generated directories and file to store previous week's job data
+      - `{Year}/{Month}/{Date}/prev_week_job_data.txt`: program-generated directories and file to store previous week's job data (text)
 - `.env`: file to store sensitive data locally for use by `config.py`
 
 ### Dependencies
@@ -74,12 +74,12 @@ To run this program, you can follow these steps:
 1. **Clone the Repository.** Start by cloning this repository to your local machine using the following command:
 
    ```bash
-   git clone git@github.com:jadamb13/rev-jobs.git
+   git clone git@github.com:jadamb13/automated-job-tracker.git
    ```
 2. **Navigate to the Project Directory.** Change your working directory to the project folder:
 
     ```bash
-    cd rev-jobs
+    cd automated-job-tracker
     ```
 3. **Python Environment:** Ensure you have Python 3.12 or a higher version installed on your system. If not, you can 
 download it from Python's official website.
